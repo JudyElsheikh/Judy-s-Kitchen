@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <link rel="stylesheet" href="styleregistration.css">
+    </head>
+<body>
+<div class="box">
+    <h1> Login </h1>
+    <form class="form" id="form">
+        <div class="form-control">
+        <label>Username</label>
+        <input type="text" placeholder="Ex:Judyelsheikh20" id="username" required>
+    </div>
+    <div class="form-control">
+        <label>Email</label>
+        <input type="email" placeholder="Ex:Judy@gmail.com" id="email" required>
+    </div>
+    <div class="form-control">
+        <label>Password</label>
+        <input type="password" placeholder="Ex:123&J" id="Password" required>
+    </div>
+    <div class="signup">
+        <h3>Isn't a member?   </h3>
+        <a href="sign up.html">Register</a>
+    </div>
+    <button type="button" class="button" onclick="validateAndRedirect()">
+        <span>Login</span>
+    </button>
+    </form>
+
+</div>
+<script> 
+    function validateAndRedirect() {
+var form = document.getElementById('form');
+if (form.checkValidity()) {
+    window.location.href = 'mainpage.html';
+} else {
+    form.reportValidity(); 
+}
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

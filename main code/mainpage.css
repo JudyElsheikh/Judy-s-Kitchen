@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:white;
+}
+header{
+    width:100%;
+   background-color: #E4CC7A; 
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    height: 50px; 
+
+}
+a{
+    text-decoration:none;
+}
+h1{
+    font-family: 'Lily Script One', cursive;
+    text-align: left;
+    color: white;
+    text-shadow:  2px 2px 4px rgba(128, 123, 123, 1);
+    font-size: 30;
+    padding-left: 20px;
+    padding-right:0px;
+}
+
+.taskbar {
+    
+     
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.taskbar nav{
+    display:flex;
+    align-items: center;
+    
+}
+.taskbar  nav ul{
+    margin: 0 1rem;
+    padding-right: 20px;
+    
+}
+.taskbar nav ul a {
+    font-size: 20;
+    color:white;
+    font-family: "Lato", sans-serif;
+    
+
+}
+
+.slider{
+    padding-top: 50px;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+}
+.swiper{
+    width:100%;
+    height:fit-content;
+
+}
+.swiper-slide img{
+    width:100%;
+
+}
+h2{
+    color:#E4CC7A;
+    
+    font-size:28px;
+    background-color: white;
+    font-family: 'Angkor';
+    padding-left: 40px;
+}
+.review{
+    padding: 20px;
+    margin-top: 100px;
+    background-color:white;
+    margin-left: 0;
+    border-width: 0;
+}
+.slider2, .swiper2{
+   
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin: 0 auto;
+    height: fit-content; 
+  
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    color: white ;
+        text-align: left;
+        max-width:800px;
+        padding: 20px;
+        background-color:  #E4CC7A;
+        border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     
+
+
+}
+.About{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.slogan{
+    width:100%;
+    height: 100px;
+    background-color: white;
+
+}
+h4{
+    padding-top: 20px;
+    font-family:'Lily Script One', cursive ;
+    font-size: 36;
+    color:#E4CC7A;
+   
+    text-align: center;
+}
+.end{
+    width:100%;
+    height: 50px;
+    color: #E4CC7A;
+    background-color: #E4CC7A;
+
+}
+h5{
+    padding-top: 10px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 24;
+    color:white;
+   
+    text-align: center;
+}
+
+

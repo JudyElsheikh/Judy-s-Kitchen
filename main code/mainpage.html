@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>
+            Judy's Kitchen
+        </title>
+        <link rel="stylesheet" href="mainpage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </head>
+<body>
+<header>
+<div class="taskbar">
+    <h1> Judy's Kitchen</h1>
+    <nav>
+    <ul><a href="mainpage.html">Home</a></ul>
+    <ul><a href="products.html">Products</a></ul>
+    <ul><a href="contact.html">Contact us</a></ul>
+    <ul><a href="loginpage.html">Sign in</a></ul>
+</nav>
+
+</div>
+</header>
+<div class="slider">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+        
+          <div class="swiper-slide"><img src="cinnabon1.jpg"></div>
+          <div class="swiper-slide"><img src="cinnabon2.jpg"></div>
+          <div class="swiper-slide"><img src="cinnabon3.jpg"></div>
+          ...
+        </div>
+       
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        </div>
+
+</div>
+
+<div class="review">
+<h2>Reviews</h2>
+</div>
+<div class="slider2">
+  <div class="swiper">
+      <div class="swiper-wrapper">
+      
+        <div class="swiper-slide"><img src="review1.jpg"></div>
+        <div class="swiper-slide"><img src="review2.jpg"></div>
+        <div class="swiper-slide"><img src="review3.jpg"></div>
+        <div class="swiper-slide"><img src="review4.jpg"></div>
+        ...
+      </div>
+     
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      </div>
+
+</div>
+<h2>About Us</h2>
+<div class="About">
+ 
+  
+  <p>Welcome to Judy's Kitchen, a beloved family-owned business specializing in one irresistible treat:
+    Cinnabons! Our passion for baking has been passed down through generations, allowing us to perfect 
+    the art of crafting the most delectable, cinnamon-infused rolls you'll ever taste. At Judy's Kitchen,
+    each Cinnabon is made with the finest ingredients, ensuring a soft, gooey, and perfectly spiced
+    experience with every bite. We take pride in our family traditions and the warmth of our kitchen,
+    where each roll is crafted with love and care. Thank you for being a part of our sweet journey—where
+     every Cinnabon is a little taste of our family’s legacy.</p>
+  </div>
+<div class="slogan">
+  <h4>The Taste of a Life Time</h4>
+</div>
+
+<div class="end">
+<h5> &copy; All Copyrights Reserved</h5>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const swiper = new Swiper('.swiper', {
+ 
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+
+  });});
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.swiper', {
+     
+        loop: true,
+      
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+    
+      });});
+      </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

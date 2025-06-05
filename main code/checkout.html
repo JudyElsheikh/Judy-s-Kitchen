@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>
+            Checkout
+        </title>
+        <link rel="stylesheet" href="checkout.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </head>
+<body>
+    <div class="container">
+    <h1>Checkout</h1>
+    <h3>Your Order</h3>
+    <div class="cart-display"></div>
+
+<form class="form" id="form">
+    <div class="box">
+        <h2>Shipping Details </h2>
+        <p>Shipping Takes Typically 1-2 Days</p>
+       
+            <div class="form-control">
+            <label>Adress Line</label>
+            <input type="text" placeholder="Ex:Street 90 Fifth Settlement" id="Adress" required>
+        </div>
+        <div class="form-control">
+            <label>Building</label>
+            <input type="text" placeholder="Building" id="Building" required>
+        </div>
+        <div class="form-control">
+            <label>Apartment</label>
+            <input type="text" placeholder="Ex: Apartment 31" id="apt" required>
+        </div>
+        <div class="form-control">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Ex: 01XXXXXXXXX" id="no" required>
+        </div>
+    
+    </div>
+    <h2>Payment Method</h2>
+    <div class="form-control">
+        <div class="oo">
+        <div class="paymenttype">
+          <label class="visa"><input type="radio" name="payment" id="visa" value="visa"> Online Payment</label>
+           <label><input type="radio" name="payment" id="cod" value="cod">Cash On Delivery (COD)</label>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="box2" id="box2">
+        <h2>Billing Details </h2>
+        
+            <div class="form-control">
+            <label>Card Number</label>
+            <input type="text" placeholder="XXXX XXXX XXXX XXXX" id="card">
+        </div>
+        <div class="form-control">
+            <label>Card Holder Name</label>
+            <input type="text" placeholder="Samantha Carpenter" id="name">
+        </div>
+        <div class="form-control">
+            <label>Date Of Expiry</label>
+            <input type="text" placeholder="MM/YY" id="date">
+        </div>
+        <div class="form-control">
+            <label>CVV</label>
+            <input type="text" placeholder="XXX" id="cvv" >
+        </div>
+
+      
+    
+    </div>
+    <button type="submit" class="button"  > Buy Now</button>
+</div>
+</form>
+    
+    <script>
+        const visaRadio = document.getElementById('visa');
+        const codRadio = document.getElementById('cod');
+        const box2 = document.getElementById('box2');
+
+        visaRadio.addEventListener('click', function() {
+            console.log('Visa selected'); 
+            box2.style.display = 'block';
+        });
+
+        codRadio.addEventListener('click', function() {
+            box2.style.display = 'none';
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                const updateCartDisplay = () => {
+                    const cartDisplay = document.querySelector('.cart-display');
+
+                    //cartDisplay.innerHTML = '<h2>Your Cart</h2>';
+
+                    if (cart.length > 0) {
+                        let total = 0;
+
+                        cart.forEach(item => {
+                            cartDisplay.innerHTML += `<p>${item.name}: ${item.price} EGP x ${item.quantity}</p>`;
+                            total += item.price * item.quantity;
+                        });
+                        cartDisplay.innerHTML += `<p><strong>Total: ${total} EGP</strong></p>`;
+                    } else {
+                        cartDisplay.innerHTML += '<p>Your cart is empty.</p>';
+                    }
+                };
+
+                updateCartDisplay();
+                document.getElementById('form').addEventListener('submit', validateAndRedirect);
+            });
+                
+    </script>
+    <script> 
+   function validateAndRedirect(event) {
+    event.preventDefault(); // Prevent the default form submission
+     
+    var form = document.getElementById('form');
+    if (form.checkValidity()) {
+       
+                 // Clear the cart
+                 localStorage.removeItem('cart');
+                
+                // Show the alert message
+                alert("Your order has been Placed. \n Thank you for Choosing Judy's Kitchen");
+
+                // Redirect to main page
+                window.location.href = 'mainpage.html';
+       
+    } else {
+        
+        form.reportValidity(); // Show validation errors if form is invalid
+    }
+}
+
+    </script>

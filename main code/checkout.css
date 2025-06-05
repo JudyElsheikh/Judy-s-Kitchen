@@ -1,0 +1,170 @@
+.box2 {
+    display: none;
+}
+.container{
+    background-color: white;
+    border-radius: 5px ;
+    box-shadow: 0 2px 5px;
+    width: 500px;
+    max-width: 100%;
+    margin-top: 20px;
+    padding:20px;
+}
+body{
+    background-color: #E4CC7A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 32;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+}
+h2{
+    color:#E4CC7A;
+    font-size: 28;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; /* Make the headers inline to align them on the same line */
+    margin-right: 20px; 
+
+  
+}
+h3{
+    color:#E4CC7A;
+    font-size: 28;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; 
+    margin-right: 20px; 
+    padding-left:40px;
+
+  
+}
+.cart-display{
+    padding-left: 40px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+.form-control label{
+    display:inline-block;
+    margin-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-control input{
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width:100%;
+
+}
+.oo{
+    display:flex;
+    justify-content: left;
+}
+.form-control .visa{
+    margin:0;
+    padding: 0;
+
+
+}
+.paymenttype{
+   
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+   padding-left:20px;
+    margin-left:0;
+    font-weight:bold;
+    display: flex; /* Flexbox to align items in a row */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    gap: 20px; /* Space between items */
+}
+
+
+.paymenttype label {
+    display: flex; 
+    align-items: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+.paymenttype input[type="radio"] {
+    margin-left: 10px; 
+    padding-left:10px;
+}
+.button{
+    background-color: #E4CC7A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width:400px;
+
+}
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.button:hover span {
+padding-right: 25px;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+.form-control input::placeholder {
+    font-family: Arial, Helvetica, sans-serif; /* Change the font family */
+    font-size: 14px; /* Change the font size */
+    font-style: italic; /* Optional: change the font style */
+    color: #888; /* Optional: change the placeholder color */
+}
+.cart-display h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.cart-display p {
+    margin: 10px 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+.form input {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
